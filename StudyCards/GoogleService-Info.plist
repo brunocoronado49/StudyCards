@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>530930491344-bjdl4a3gsi4csg7s059rlg1slv2dqsfe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.530930491344-bjdl4a3gsi4csg7s059rlg1slv2dqsfe</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5aHX8mT0QC9Ig0qLFlZf8ZBT73KNPu08</string>
+	<key>GCM_SENDER_ID</key>
+	<string>530930491344</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>brauny.StudyCards</string>
+	<key>PROJECT_ID</key>
+	<string>brauny-dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>brauny-dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:530930491344:ios:629df8fb36af09265223d5</string>
+	<key>DATABASE_URL</key>
+	<string>https://brauny-dc-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

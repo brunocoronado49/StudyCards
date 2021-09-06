@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		D483327B26E42842009D5892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D483327A26E42842009D5892 /* Preview Assets.xcassets */; };
 		D483328626E42842009D5892 /* StudyCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483328526E42842009D5892 /* StudyCardsTests.swift */; };
 		D483329126E42842009D5892 /* StudyCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483329026E42842009D5892 /* StudyCardsUITests.swift */; };
+		D4D06C3B26E67CC200D5D4BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D4D06C3A26E67CC200D5D4BF /* FirebaseFirestore */; };
+		D4D06C3D26E67CC200D5D4BF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D4D06C3C26E67CC200D5D4BF /* FirebaseFirestoreSwift-Beta */; };
+		D4D06C3F26E67D4600D5D4BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4D06C3E26E67D4600D5D4BF /* GoogleService-Info.plist */; };
+		D4D06C4626E68BF900D5D4BF /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D06C4526E68BF900D5D4BF /* CardRepository.swift */; };
+		D4D06C4826E68C8500D5D4BF /* StudyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D06C4726E68C8500D5D4BF /* StudyCard.swift */; };
+		D4D06C4A26E6908F00D5D4BF /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D06C4926E6908F00D5D4BF /* CardViewModel.swift */; };
+		D4D06C4C26E697AB00D5D4BF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D06C4B26E697AB00D5D4BF /* CardView.swift */; };
+		D4D06C4E26E6985000D5D4BF /* OneCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D06C4D26E6985000D5D4BF /* OneCardViewModel.swift */; };
+		D4D06C5026E6A8A300D5D4BF /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D06C4F26E6A8A300D5D4BF /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,13 @@
 		D483328C26E42842009D5892 /* StudyCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D483329026E42842009D5892 /* StudyCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsUITests.swift; sourceTree = "<group>"; };
 		D483329226E42842009D5892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D06C3E26E67D4600D5D4BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D4D06C4526E68BF900D5D4BF /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		D4D06C4726E68C8500D5D4BF /* StudyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCard.swift; sourceTree = "<group>"; };
+		D4D06C4926E6908F00D5D4BF /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		D4D06C4B26E697AB00D5D4BF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D4D06C4D26E6985000D5D4BF /* OneCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCardViewModel.swift; sourceTree = "<group>"; };
+		D4D06C4F26E6A8A300D5D4BF /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D06C3B26E67CC200D5D4BF /* FirebaseFirestore in Frameworks */,
+				D4D06C3D26E67CC200D5D4BF /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				D483327326E42840009D5892 /* StudyCardsApp.swift */,
-				D483327526E42840009D5892 /* ContentView.swift */,
+				D4D06C3E26E67D4600D5D4BF /* GoogleService-Info.plist */,
+				D4D06C4426E68BC500D5D4BF /* Repository */,
+				D4D06C4326E68BB100D5D4BF /* ViewModels */,
+				D4D06C4126E68B7F00D5D4BF /* Models */,
+				D4D06C4026E68B7A00D5D4BF /* Views */,
 				D483327726E42842009D5892 /* Assets.xcassets */,
 				D483327C26E42842009D5892 /* Info.plist */,
 				D483327926E42842009D5892 /* Preview Content */,
@@ -130,6 +152,41 @@
 			path = StudyCardsUITests;
 			sourceTree = "<group>";
 		};
+		D4D06C4026E68B7A00D5D4BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D483327526E42840009D5892 /* ContentView.swift */,
+				D4D06C4B26E697AB00D5D4BF /* CardView.swift */,
+				D4D06C4F26E6A8A300D5D4BF /* FormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4D06C4126E68B7F00D5D4BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4D06C4726E68C8500D5D4BF /* StudyCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4D06C4326E68BB100D5D4BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4D06C4926E6908F00D5D4BF /* CardViewModel.swift */,
+				D4D06C4D26E6985000D5D4BF /* OneCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D4D06C4426E68BC500D5D4BF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D4D06C4526E68BF900D5D4BF /* CardRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +203,10 @@
 			dependencies = (
 			);
 			name = StudyCards;
+			packageProductDependencies = (
+				D4D06C3A26E67CC200D5D4BF /* FirebaseFirestore */,
+				D4D06C3C26E67CC200D5D4BF /* FirebaseFirestoreSwift-Beta */,
+			);
 			productName = StudyCards;
 			productReference = D483327026E42840009D5892 /* StudyCards.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +278,9 @@
 				Base,
 			);
 			mainGroup = D483326726E42840009D5892;
+			packageReferences = (
+				D4D06C3926E67CC200D5D4BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D483327126E42840009D5892 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +299,7 @@
 			files = (
 				D483327B26E42842009D5892 /* Preview Assets.xcassets in Resources */,
 				D483327826E42842009D5892 /* Assets.xcassets in Resources */,
+				D4D06C3F26E67D4600D5D4BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D06C5026E6A8A300D5D4BF /* FormView.swift in Sources */,
 				D483327626E42840009D5892 /* ContentView.swift in Sources */,
+				D4D06C4826E68C8500D5D4BF /* StudyCard.swift in Sources */,
+				D4D06C4E26E6985000D5D4BF /* OneCardViewModel.swift in Sources */,
+				D4D06C4626E68BF900D5D4BF /* CardRepository.swift in Sources */,
 				D483327426E42840009D5892 /* StudyCardsApp.swift in Sources */,
+				D4D06C4C26E697AB00D5D4BF /* CardView.swift in Sources */,
+				D4D06C4A26E6908F00D5D4BF /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +651,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4D06C3926E67CC200D5D4BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4D06C3A26E67CC200D5D4BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D06C3926E67CC200D5D4BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D4D06C3C26E67CC200D5D4BF /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D06C3926E67CC200D5D4BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D483326826E42840009D5892 /* Project object */;
 }
